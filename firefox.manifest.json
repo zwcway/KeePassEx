@@ -54,6 +54,9 @@
 		},
 		"pcloud": {
 			"client_id": "1NklWhTApYR"
+		},
+		"box.com": {
+			"client_id": "bj4ddwc86j1kdz8anykuz251r1e0gc5j"
 		}
 	},
 	"permissions": [

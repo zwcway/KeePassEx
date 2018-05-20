@@ -14,6 +14,7 @@
 		<oauth-provider :provider-manager="googleDriveManager" :settings="settings"></oauth-provider>
 		<oauth-provider :provider-manager="onedriveManager" :settings="settings"></oauth-provider>
 		<oauth-provider :provider-manager="pCloudFileManager" :settings="settings"></oauth-provider>
+		<oauth-provider :provider-manager="boxComFileManager" :settings="settings"></oauth-provider>
 		<oauth-provider :provider-manager="sampleManager" :settings="settings"></oauth-provider>
 		<shared-link-provider :provider-manager="sharedUrlManager" :settings="settings"></shared-link-provider>
 		<webdav-provider :provider-manager="webdavManager" :settings="settings"></webdav-provider>
@@ -35,6 +36,7 @@
 			localFileManager: Object,
 			onedriveManager: Object,
 			pCloudFileManager: Object,
+			boxComFileManager: Object,
 			sampleManager: Object,
 			webdavManager: Object,
 			sharedUrlManager: Object,

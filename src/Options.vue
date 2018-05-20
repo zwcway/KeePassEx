@@ -13,6 +13,7 @@
 					:local-file-manager="services.localChromePasswordFileManager"
 					:onedrive-manager="services.oneDriveFileManager" 
 					:p-cloud-file-manager="services.pCloudFileManager"
+					:box-com-file-manager="services.boxComFileManager"
 					:sample-manager="services.sampleDatabaseFileManager" 
 					:shared-url-manager="services.sharedUrlFileManager" 
 					:webdav-manager="services.webdavFileManager"
@@ -47,6 +48,7 @@
 	import {OneDriveFileManager} from '$services/oneDriveFileManager.js'
 	import {SharedUrlFileManager} from '$services/sharedUrlFileManager.js'
 	import {PCloudFileManager} from '$services/pCloudFileManager.js'
+	import {BoxComFileManager} from '$services/box.comFileManager.js'
 	import {SampleDatabaseFileManager} from '$services/sampleDatabaseFileManager.js'
 	import {WebdavFileManager} from '$services/webdavFileManager.js'
 	// Components
@@ -70,6 +72,7 @@
 	const sharedUrlFileManager = new SharedUrlFileManager()
 	const oneDriveFileManager = new OneDriveFileManager(settings)
 	const pCloudFileManager = new PCloudFileManager(settings)
+	const boxComFileManager = new BoxComFileManager(settings)
 	const sampleDatabaseFileManager = new SampleDatabaseFileManager()
 	const webdavFileManager = new WebdavFileManager(settings)
 
@@ -80,7 +83,8 @@
 		sharedUrlFileManager, 
 		sampleDatabaseFileManager, 
 		oneDriveFileManager,
-		pCloudFileManager)
+		pCloudFileManager,
+		boxComFileManager)
 	/* beautify preserve:end */
 
 	export default {
@@ -105,6 +109,7 @@
 					localChromePasswordFileManager,
 					oneDriveFileManager,
 					pCloudFileManager,
+					boxComFileManager,
 					sampleDatabaseFileManager,
 					sharedUrlFileManager,
 					keyFileParser,
