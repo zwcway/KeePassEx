@@ -1,4 +1,3 @@
-# Tusk is no longer actively maintained.
 
 * **Is it still safe?**  Yes. As far as the community is aware, Tusk's security model is still the same.  You may continue using Tusk, and I will keep the third party integrations (Dropbox, Google Drive, etc.) active.  Please contact me through [my website](https://subdavis.com) to report security concerns.
 * **Why is it unsuppored?** Because I no longer prefer the keepass ecosystem.  I believe version control and data sync should be a core feature of any password manager.
